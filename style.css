@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #3f2712;
+    ;
+
+}
+body {
+    background-color: linen;
+}
+nav {
+    position: fixed;
+    width: 7vw;
+    z-index: +5;
+
+}
+.sidebar {
+    position: fixed;
+    height: 100vh;
+    width: 7vw;
+    background-color: #3f2712;
+    z-index: +1;
+    left: 0;
+    top: 0;
+    transition: width 1.5s;
+    
+}
+.active {
+    position: fixed;
+    height: 100vh;
+    width: 40vw;
+    background-color: #3f2712;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+img {
+    position: absolute;
+    z-index: 10;
+}
+.logo {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3vh;
+    width: 5vw;
+    height: auto;
+
+}
+.person-icon {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4vw;
+    top: 25vh;
+
+}
+
+.heart-icon {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40vh;
+
+    width: 4vw;
+
+}
+
+.search-icon {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 90vh;
+
+    width: 4vw;
+
+}
+/* main {
+    margin-left: 7vw;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+} */
+h1, h2, h3, h4 {
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+
+}
+h1 {
+    padding-top: 15vh;
+    font-size: 45px;
+}
+h2 {
+    font-style: italic;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 25px;
+    padding-top: 10vh;
+    margin-left: 200px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+h4 {
+    color: linen;
+    font-size: 25px;
+    margin-left: 10vw;
+    width: max-content;
+    top: 20px;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    max-width: 650px;
+    margin-top: 40px;
+    margin-bottom: 1.2em;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+button {
+    margin-top: 30px;
+    border-color: #3f271286;
+    background-color: rgba(212, 191, 167, 0.404);
+    border-radius: 10px;
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+button:hover {
+    background-color: rgba(212, 191, 167, 0.781);
+
+}
+.button-1 {
+    margin-left: 30vw;
+    margin-right: 25px;
+    width: 200px;
+
+}
+.letter-bar {
+    width: 100vw;
+    height: 50px;
+    background-color: rgb(163, 142, 118);
+}
+.letters {
+    position: absolute;
+    color: linen;
+    left: 18vw;
+    margin-top: -43px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
