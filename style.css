@@ -24,7 +24,7 @@ nav {
     left: 0;
     top: 0;
     transition: width 1.5s;
-    
+    overflow: hidden;
 }
 .active {
     position: fixed;
