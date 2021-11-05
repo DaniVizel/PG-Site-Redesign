@@ -11,25 +11,27 @@ body {
 }
 nav {
     position: fixed;
-    width: 7vw;
+    width: 60px;
     z-index: +5;
 
 }
 .sidebar {
     position: fixed;
     height: 100vh;
-    width: 7vw;
+    width: 60px;
     background-color: #3f2712;
-    z-index: +1;
+    z-index: 5;
     left: 0;
     top: 0;
     transition: width 1.5s;
     overflow: hidden;
+    list-style: none;
+    padding-top: 5vh;
 }
 .active {
     position: fixed;
     height: 100vh;
-    width: 40vw;
+    width: 30vw;
     background-color: #3f2712;
     z-index: -1;
     left: 0;
@@ -39,28 +41,22 @@ img {
     position: absolute;
     z-index: 10;
 }
+
 .logo {
     left: 50%;
     transform: translateX(-50%);
     top: 3vh;
-    width: 5vw;
+    width: 40px;
     height: auto;
-
-}
-.person-icon {
-    left: 50%;
-    transform: translateX(-50%);
-    width: 4vw;
-    top: 25vh;
 
 }
 
 .heart-icon {
     left: 50%;
     transform: translateX(-50%);
-    top: 40vh;
+    top: 50vh;
 
-    width: 4vw;
+    width: 40px;
 
 }
 
@@ -69,8 +65,15 @@ img {
     transform: translateX(-50%);
     top: 90vh;
 
-    width: 4vw;
+    width: 40px;
 
+}
+.donate-icon {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 70vh;
+
+    width: 40px;
 }
 /* main {
     margin-left: 7vw;
@@ -79,7 +82,7 @@ img {
     margin-right: auto;
     align-content: center;
 } */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, li {
     font-family: 'EB Garamond', serif;
     text-align: center;
 
@@ -107,13 +110,40 @@ h4 {
     width: max-content;
     top: 20px;
 }
-p {
+h5 {
+    color: linen;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin-left: 8vw;
+    margin-top: 10px;
+    font-weight: 300;
+    width: max-content;
+
+}
+h5:hover {
+    opacity: 60%;
+}
+h6 {
     font-family: 'Open Sans', sans-serif;
     max-width: 650px;
     margin-top: 40px;
     margin-bottom: 1.2em;
     margin-left: 50%;
     transform: translateX(-50%);
+    font-weight: normal;
+    font-size: 16px;
+}
+
+li {
+    position: relative;
+    color: linen;
+    font-size: 25px;
+    margin-left: 7vw;
+    width: max-content;
+    margin-top: 30px;
+}
+li:hover {
+    opacity: 60%;
 }
 button {
     margin-top: 30px;
@@ -134,18 +164,81 @@ button:hover {
     width: 200px;
 
 }
-.letter-bar {
+.alpha-bar {
     width: 100vw;
     height: 50px;
     background-color: rgb(163, 142, 118);
 }
-.letters {
+.alphabet {
     position: absolute;
     color: linen;
-    left: 18vw;
+    left: 250px;
     margin-top: -43px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
     font-size: 30px;
     letter-spacing: 5px;
+    z-index: 100;
+
+}
+.letter {
+    color: linen;
+    cursor: pointer;
+}
+.letter-highlight {
+    display: none;
+    width: 40px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #3f271286;
+    position: absolute;
+    z-index: 5;
+    margin-left: 245px;
+    margin-top: -50px;
+
+}
+.dropdown {
+    display: block;
+    background-color: #e4d7ca;
+    width: 300px;
+    height: 0;
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 200px;
+    transition: height 1s;
+    overflow: hidden;
+}
+p {
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    max-width: 700px;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    margin: auto;
+    transform: translateX(0);
+    text-indent: 1.5em;
+}
+.c1 {
+    text-align: center;
+    padding-top: 30px;
+}
+.c2 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+}
+.running-head {
+    background-color: rgb(240, 227, 214);
+    opacity: 100%;
+    width: 100%;
+    height: 30px;
+    padding: 4px;
+    position: fixed;
+    top: 0;
+    margin: auto;
+    z-index: 10;
+
 }

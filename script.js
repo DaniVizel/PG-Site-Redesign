@@ -1,13 +1,170 @@
 console.log("Project Gutenberg Redesign");
 
-var open = false;
-var sideBarText = "<h4>Sign In</h4> <h4>Your Favourites</h4> <h4>Bookshelves</h4> <h4>About</h4> <h4>FAQ</h4> <h4>Donate</h4>"
-// how would i add classes to the additional elements above?
-
 $("nav").click(function(){
     $(".sidebar").toggleClass("active");
-    //     $("nav").append(sideBarText);
 
+});
+$(".letter").click(function(){
+    $(".dropdown").css({
+        height: '60vh',
+
+});
+});
+$(".A").click(function(){
+    $(".letter-highlight").css({
+        'display': 'initial',
+        'margin-left': '240px',
+    });
+});
+$(".B").click(function(){
+    $(".letter-highlight").css({
+        'display': 'initial',
+        'margin-left': '279px',
+    });
+});
+$(".C").click(function(){
+    $(".letter-highlight").css({
+        'display': 'initial',
+        'margin-left': '318px',
+    });
+});
+$(".D").click(function(){
+    $(".letter-highlight").css({
+        'display': 'initial',
+        'margin-left': '355px',
+    });
+});
+$(".E").click(function(){
+    $(".letter-highlight").css({
+        'display': 'initial',
+        'margin-left': '393px',
+    });
+});
+$(".F").click(function(){
+    $(".letter-highlight").css({
+        'display': 'initial',
+        'margin-left': '426px',
+    });
+});
+$(".G").click(function(){
+    $(".letter-highlight").css({
+        'display': 'initial',
+        'margin-left': '465px',
+    });
+});
+$(".H").click(function(){
+    $(".letter-highlight").css({
+        'display': 'initial',
+        'margin-left': '504px',
+    });
+});
+$(".I").click(function(){
+    $(".letter-highlight").css({
+        'display': 'initial',
+        'margin-left': '538px',
+    });
+});
+$(".J").click(function(){
+    $(".letter-highlight").css({
+        'display': 'initial',
+        'margin-left': '565px',
+    });
+});
+$(".K").click(function(){
+    $(".letter-highlight").css({
+        'display': 'initial',
+        'margin-left': '600px',
+    });
+});
+$(".L").click(function(){
+    $(".letter-highlight").css({
+        'display': 'initial',
+        'margin-left': '637px',
+    });
+});
+$(".M").click(function(){
+    $(".letter-highlight").css({
+        'display': 'initial',
+        'margin-left': '678px',
+    });
+});
+$(".N").click(function(){
+    $(".letter-highlight").css({
+        'display': 'initial',
+        'margin-left': '723px',
+    });
+});
+$(".O").click(function(){
+    $(".letter-highlight").css({
+        'display': 'initial',
+        'margin-left': '766px',
+    });
+});
+$(".P").click(function(){
+    $(".letter-highlight").css({
+        'display': 'initial',
+        'margin-left': '804px',
+    });
+});
+$(".Q").click(function(){
+    $(".letter-highlight").css({
+        'display': 'initial',
+        'margin-left': '844px',
+    });
+});
+$(".R").click(function(){
+    $(".letter-highlight").css({
+        'display': 'initial',
+        'margin-left': '883px',
+    });
+});
+$(".S").click(function(){
+    $(".letter-highlight").css({
+        'display': 'initial',
+        'margin-left': '919px',
+    });
+});
+$(".T").click(function(){
+    $(".letter-highlight").css({
+        'display': 'initial',
+        'margin-left': '955px',
+    });
+});
+$(".U").click(function(){
+    $(".letter-highlight").css({
+        'display': 'initial',
+        'margin-left': '992px',
+    });
+});
+$(".V").click(function(){
+    $(".letter-highlight").css({
+        'display': 'initial',
+        'margin-left': '1033px',
+    });
+});
+$(".W").click(function(){
+    $(".letter-highlight").css({
+        'display': 'initial',
+        'margin-left': '1077px',
+    });
+});
+$(".X").click(function(){
+    $(".letter-highlight").css({
+        'display': 'initial',
+        'margin-left': '1120px',
+    });
+});
+$(".Y").click(function(){
+    $(".letter-highlight").css({
+        'display': 'initial',
+        'margin-left': '1160px',
+    });
+});
+$(".Z").click(function(){
+    $(".letter-highlight").css({
+        'display': 'initial',
+        'margin-left': '1195px',
+    });
 });
 
 
@@ -16,23 +173,4 @@ $("nav").click(function(){
 
 
 
-
-
-
-
-
-// function expand(){
-//     // if (open = true){
-//     //     $("nav").remove(sideBarText);
-
-//     //     open = false;
-//     // }
-//     // console.log("active");
-//     $(".sidebar").toggleClass("active");
-
-//     $("nav").append(sideBarText);
-//     open = true;
-    
-
-// }
 
