@@ -20,8 +20,14 @@ $(".letter").click(function(){
 })
 $(".category").click(function(){
     $(this).toggleClass("active");
-    $(".books-container").css("display", "grid");
+    // $(".books-container").css("display", "grid");
 
 })
+// add function to dynamically adjust line length
 
-
+//long reading
+// var width = $(window).width();
+// console.log(width);
+// if (width < 1200){
+//   console.log ("small");
+// }
