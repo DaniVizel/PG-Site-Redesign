@@ -370,8 +370,15 @@ h4 {
 
 }
 @media (max-width: 600px){
-    .long-reading p {
+    .grid-wrapper {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        
+    }
+    .long-reading {
         font-size: 13px;
+        grid-column-start: 2;
+        grid-column-end: 7;
     }
     .books-container {
         grid-template-columns: repeat(2, 1fr);
