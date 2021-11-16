@@ -23,16 +23,18 @@
 
             <ul id = "nav-list">
                 <a href="bookshelves.html"><li>Bookshelves</li></a>
-                <li>About</li>
-                    <!-- <li>Collection Development</li>
+                <li id="about">About</li>
+                <div id="about-content">
+                    <li>Collection Development</li>
                     <li>Contact Us</li>
                     <li>History & Philosophy</li>
-                    <li>Permissions & Licence</li> -->
+                    <li>Permissions & Licence</li>
+                </div>
                 <li>FAQ</li> 
                 <a href="pride-and-prejudice.html"><li>Your Lists</li> </a>
                 <li>Donate</li>
-                <li><img class="search-icon" src="images/search-icon.svg"></li>
-            </ul>
+                <input type="text" name="search" placeholder="What can we help you find?" class="search-field">
+                <li class="search-button"><img class="search-icon" src="images/search-icon.svg"></li>            </ul>
             
         </div>
     </nav>
@@ -44,7 +46,7 @@
     <div class="shelf-list">
         <p class= "letter A">A</p>
         <ul class="list">
-            <li class="category">Adventure</li>
+            <li class="category adventure">Adventure</li>
             <li class="category">Africa</li>
             <li class="category">African American Writers</li>
             <li class="category">Ainslee's</li>
@@ -131,36 +133,108 @@
         </ul>
 
         <p class= "letter F">F</p>
+        <ul class="list">
+            <li class="category">Fiction</li>
+            <li class="category">Fine Arts</li>
+            <li class="category">Famous Scots Series</li>
+            <li class="category">Fantasy</li>
+            <li class="category">Folklore</li>
+            <li class="category">Forestry</li>
+            <li class="category">France</li>
+        </ul>
+
         <p class= "letter G">G</p>
+        <ul class="list">
+            <li class="category">Garden and Forest</li>
+            <li class="category">General Fiction</li>
+            <li class="category">Geology</li>
+            <li class="category">Germany</li>
+            <li class="category">German Language Books</li>
+            <li class="category">Godey's Lady's Book</li>
+            <li class="category">Golden Days for Boys and Girls</li>
+            <li class="category">Gothic Fiction</li>
+            <li class="category">Graham's Magazine</li>
+            <li class="category">Greece</li>
+        </ul>
+
         <p class= "letter H">H</p>
         <p class= "letter I">I</p>
         <p class= "letter J">J</p>
+        <ul class="list">
+            <li class="category">Judaism</li>
+            <li class="category">Journal of Entomology and Zoology</li>
+        </ul>
         <p class= "letter K">K</p>
         <p class= "letter L">L</p>
+        <ul class="list">
+            <li class="category">L'Illustration</li>
+            <li class="category">Language Education</li>
+            <li class="category">Latter Day Saints</li>
+            <li class="category">Lippincott's Magazine</li>
+            <li class="category">Little Folks</li>
+            <li class="category">London Medical Gazette</li>
+            <li class="category">Love</li>
+        </ul>
+
         <p class= "letter M">M</p>
         <p class= "letter N">N</p>
         <p class= "letter O">O</p>
+        <ul class="list">
+            <li class="category">One Act Plays</li>
+            <li class="category">Opera</li>
+            <li class="category">Our Young Folks</li>
+        </ul>
+
         <p class= "letter P">P</p>
         <p class= "letter Q">Q</p>
         <p class= "letter R">R</p>
+        <ul class="list">
+            <li class="category">Racism</li>
+            <li class="category">Reference</li>
+            <li class="category">Romantic Fiction</li>
+        </ul>
+
         <p class= "letter S">S</p>
         <p class= "letter T">T</p>
         <p class= "letter U">U</p>
+        <ul class="list">
+            <li class="category">US Civil War</li>
+            <li class="category">United Kingdom</li>
+            <li class="category">United States</li>
+            <li class="category">United States Law</li>
+        </ul>
+
         <p class= "letter V">V</p>
         <p class= "letter W">W</p>
+        <ul class="list">
+            <li class="category">Western</li>
+            <li class="category">Witchcraft</li>
+            <li class="category">Women's Travel Journals</li>
+            <li class="category">Woodwork</li>
+            <li class="category">World War I</li>
+            <li class="category">World War II</li>
+        </ul>
+
         <p class= "letter X">X</p>
         <p class= "letter Y">Y</p>
         <p class= "letter Z">Z</p>
+        <ul class="list">
+            <li class="category">Zoology</li>
+            
+        </ul>
 
     </div>
     <div class="books-container">
-        <!-- <a href="pride-and-prejudice.html" target="blank"><div class="book-wrap"> -->
 
-        <a href="pride-and-prejudice.html" target="blank"><div class="book-wrap">
+        
+        <div class="book-wrap">
+            <a href="pride-and-prejudice.html" target="blank">
             <img class="book" src="images/book-covers/cover01-pride.jpeg">
             <h4>Pride and Prejudice</h4>
-            <h5>Jane Austen</h5>       
-        </div></a>
+            <h5>Jane Austen</h5>  
+            </a>     
+        </div>
+        
         <div class="book-wrap">
             <img class="book" src="images/book-covers/cover02-sleepy.jpeg">
             <h4>The Legend of Sleepy Hollow</h4>
@@ -204,7 +278,7 @@
         <div class="book-wrap">
             <img class="book" src="images/book-covers/cover10-confession.jpeg">
             <h4>The Confessions of St. Augustine</h4>
-            <h5>Bishop of Hippo Saint Augustine</h5>       
+            <h5>Bishop Saint Augustine</h5>       
         </div>
         <div class="book-wrap">
             <img class="book" src="images/book-covers/cover11-copperfield.jpeg">
@@ -250,6 +324,31 @@
             <img class="book" src="images/book-covers/cover19-pensees.jpeg">
             <h4>Pascal's Pensées</h4>
             <h5>Blaise Pascal</h5>       
+        </div>
+        <div class="book-wrap adventure">
+            <img class="book" src="images/book-covers/adventure01-montecris.jpeg">
+            <h4>The Count of Monte Cristo</h4>
+            <h5>Alexandre Dumas</h5>       
+        </div>
+        <div class="book-wrap adventure">
+            <img class="book" src="images/book-covers/adventure02-callwind.jpeg">
+            <h4>The Call of the Wild</h4>
+            <h5>Jack London</h5>       
+        </div>
+        <div class="book-wrap adventure">
+            <img class="book" src="images/book-covers/adventure03-aroundworld.jpeg">
+            <h4>Around the World in Eighty Days</h4>
+            <h5>Jules Verne</h5>       
+        </div>
+        <div class="book-wrap adventure">
+            <img class="book" src="images/book-covers/adventure04-fang.jpeg">
+            <h4>White Fang</h4>
+            <h5>Jack London</h5>       
+        </div>
+        <div class="book-wrap adventure">
+            <img class="book" src="images/book-covers/adventure05-musketeers.jpeg">
+            <h4>The Three Musketeers</h4>
+            <h5>Alexandre Dumas</h5>       
         </div>
 
     </div>

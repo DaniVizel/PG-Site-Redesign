@@ -4,6 +4,23 @@
 
 $(".page-marker").click(function(){
     $(".nav-bar").toggleClass("active");
+
+    if($("#about-content").hasClass("active")){
+        $("#about-content").removeClass("active");
+    }
+})
+$(".search-button").click(function(){
+  $(".search-field").toggleClass("active");
+})
+$(window).scroll(function(){
+  if($(".nav-bar").hasClass("active")){
+    $(".nav-bar").removeClass("active");
+    $("#about-content").removeClass("active");
+
+  }  
+});
+$("#about").click(function(){
+  $("#about-content").toggleClass("active");
 })
 
 //Bookshelf
@@ -23,11 +40,7 @@ $(".category").click(function(){
     // $(".books-container").css("display", "grid");
 
 })
-// add function to dynamically adjust line length
-
-//long reading
-// var width = $(window).width();
-// console.log(width);
-// if (width < 1200){
-//   console.log ("small");
-// }
+$(".category.adventure").click(function(){
+  $(".book-wrap").toggleClass("hidden");
+  $(".book-wrap.adventure").toggleClass("hidden");
+})
